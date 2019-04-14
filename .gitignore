@@ -1,2 +1,5 @@
 **/*.cache
 **/*.ipynb*
+**/*.class
+**/*target/
+**/*build.properties
