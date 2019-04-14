@@ -8,4 +8,7 @@ class ExampleSpec extends FunSuite {
      assert(1==1)
   }
 
+  test("trivial") {
+    assert(true)
+  }
 }

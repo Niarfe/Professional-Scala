@@ -1,6 +1,6 @@
 package com.packt.courseware.l1
 
-import java.time.LocalTime
+import java.time.{ LocalTime, LocalDate }
 import java.time.format.DateTimeFormatter
 
 import scala.io.StdIn
@@ -23,9 +23,10 @@ object Chatbot2 {
 
   def step(input:String): LineProcessResult = {
     input match {
-      case "bye" => LineProcessResult("ok, bye", true)
+      case "bye"  => LineProcessResult("ok, bye", true)
       case "time" => LineProcessResult(LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")),false)
-      case _ => LineProcessResult("interesting...", false)
+      case "date" => LineProcessResult(LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd")), false)
+      case _      => LineProcessResult("interesting...", false)
     }
   }
 
