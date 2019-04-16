@@ -7,13 +7,20 @@ import com.packt.courseware.l3.modes.{Bye, CurrentDate, CurrentTime, Interesting
 
 import scala.io.StdIn
 
+object ExampleObject {
+  def hello(): Unit = {
+    println("Welcomen am Bottenberg")
+  }
+}
 
 object Chatbot3 {
 
   val effects = DefaultEffects
 
-  def main(args: Array[String]): Unit = {
+  val example = ExampleObject
 
+  def main(args: Array[String]): Unit = {
+    example.hello()
     val name = StdIn.readLine("Hi! What is your name? ")
     println(s" $name, tell me something interesting, say 'bye' to end the talk")
 

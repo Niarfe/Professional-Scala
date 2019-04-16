@@ -49,3 +49,4 @@ You’ll also need the following software installed in advance:
 
 
 Sat Apr 13 19:58:09 PDT 2019 Thru chap1
+Tue Apr 18 07:48:20 UTC 2019 Into Chap2, mid page 34

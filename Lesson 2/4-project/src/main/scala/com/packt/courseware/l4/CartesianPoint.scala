@@ -5,4 +5,6 @@ case class CartesianPoint(x:Double, y:Double) extends Point2D {
 
   def *(v:Double) = new CartesianPoint(x,y)
 
+  override def length(): Double = x*x + y*y
+
 }
